@@ -10,6 +10,10 @@ class MultiHeadAttention(nn.Module):
     ''' Multi-Head Attention module '''
 
     def __init__(self, n_head, d_model, d_k, d_v, dropout=0.1):
+        # n_head: 注意力头的数量
+        # d_model: 模型的维度大小
+        # d_k: 注意力头的键（key）的维度大小
+        # d_v: 注意力头的值（value）的维度大小
         super().__init__()
 
         self.n_head = n_head
